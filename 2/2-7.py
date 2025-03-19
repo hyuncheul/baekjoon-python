@@ -9,7 +9,7 @@ elif a==b:
     prize = 1000+a*100
     print(prize)
 elif b==c:
-    prize = 1000+a*100
+    prize = 1000+b*100
     print(prize)
 elif a==c:
     prize = 1000+a*100

@@ -4,23 +4,12 @@ c = int(input())
 c1 = c//60
 c2 = c%60
 
+b= b+c2
+if b >= 60:
+    a = a+1
+    b = b-60
 
-if b+c2 >= 60:
-    if(a+c1 >= 23):
-        a = a+c1 - 23
-        b = b+c2 - 60
-        print(a, b)
-    else: 
-        a = a+c1
-        b = b+c2 - 60
-        print(a, b)
-
-else:
-    if(a+c1 >= 23):
-        a = a+c1 - 23
-        b = b+c2
-        print(a, b)
-    else: 
-        a = a+c1
-        b = b+c2
-        print(a,b)
+a = a+c1
+if a>=24:
+    a= a-24
+print(a,b)
