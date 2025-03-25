@@ -6,7 +6,7 @@ for i in range (c):
     d.append(e)
 
 for i in range (c):
-    ii = str(i)
+    ii = str(i+1)
     dd = str(d[i])
     print("Case #%s: %s" % (ii, dd))
 
