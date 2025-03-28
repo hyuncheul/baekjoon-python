@@ -21,7 +21,5 @@ for i in range(M):
         main[aaa - 1] = c[i]
         aaa += 1
 
-print(a, b, c, main)
-
 for i in range(N):
     print(main[i])
