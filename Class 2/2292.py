@@ -5,4 +5,4 @@ while num < N:
     num = num + 6*i
     i += 1
 
-print(num, i)
+print(i)
