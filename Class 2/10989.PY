@@ -6,4 +6,5 @@ for _ in range(N):
 
 a.sort()
 
-print(a)
+for i in range(N):
+    print(a[i])

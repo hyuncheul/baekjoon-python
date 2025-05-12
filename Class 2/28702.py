@@ -20,7 +20,7 @@ if D % 15 == 0:
     D = 'FizzBuzz'
 elif D % 5 == 0:
     D = 'Buzz'
-elif D % 3 == 0:
+elif D % 3 == 0: 
     D = 'Fizz'
 
 print(D)
