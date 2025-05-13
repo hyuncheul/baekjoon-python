@@ -7,7 +7,7 @@ for i in range(N):
 
 set_string = list(set(string))
 
-set_string.sort(key = len)
+set_string.sort(key=lambda x: (len(x), x))
 
 for s in set_string:
     print(s)
