@@ -6,10 +6,12 @@ for i in range(N):
     if i == 0 :
         box.append([x,y])
     else:
-        for j in range(len(box)):
-            if box[j][0] > x and box[j][1] > y:
-               box.insert(j-1, [x,y])
-        box.append([x,y])
+        j = 0
+        if box[j][0] > x and box[j][1] > y:
+            box.insert(j-1, [x,y])
+        elif box[j][0] < x and box[j][1] < y:
+            j += 1
+        else: box.
 
 
 
