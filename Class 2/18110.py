@@ -1,5 +1,8 @@
 import sys
 
+def custom_round(x):
+    return int(x + 0.5)
+
 N = int(sys.stdin.readline())
 score = []
 
@@ -19,4 +22,4 @@ else:
     if len(newscore) == 0:
         print(0)
     else:
-        print(round(sum(newscore) / len(newscore)))
+        print(custom_round(sum(newscore) / len(newscore)))

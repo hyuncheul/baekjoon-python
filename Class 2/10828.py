@@ -1,11 +1,27 @@
 N = int(input())
-
+main = []
 for _ in range(N):
-    linesplit = []
-    line = input()
-    linesplit = line.split()
-    func = linesplit[0]
-    num = int(linesplit[1])
+    line = input().split()
+    func = line[0]
     
     if func == 'push':
-        print(num)
+        num = int(line[1])
+        main.append(num)
+
+    elif func == 'pop':
+        if main:
+            print(main.pop())
+        else: print(-1)
+
+    elif func == 'size':
+        print(len(main))
+
+    elif func == 'empty':
+        if main:
+            print(0)
+        else: print(1)
+
+    elif func == 'top':
+        if main:
+            print(main[-1])
+        else: print(-1)
