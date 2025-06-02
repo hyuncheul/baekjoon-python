@@ -1,18 +1,17 @@
 import sys
+
 N, M = map(int, sys.stdin.readline().split())
-K = N + M
-cnt = []
 
-people = []
-for i in range(K):
-    people.append(input())
+heard = set()
+for _ in range(N):
+    heard.add(input().strip())
 
-for peo in people:
-    a = people.count(peo)
-    if a >= 2 and peo not in cnt:
-        cnt.append(peo)
+seen = set()
+for _ in range(M):
+    seen.add(input().strip())
 
-print(len(cnt))
+result = sorted(heard & seen)
 
-for pr in cnt:
-    print(pr)
+print(len(result))
+for name in result:
+    print(name)
