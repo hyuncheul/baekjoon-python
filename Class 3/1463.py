@@ -6,7 +6,7 @@ while(X > 1):
     if X % 3 == 0:
         X = X/3
         cnt += 1
-    elif X%2 == 0:
+    elif X%2 == 0 and (X-1)/3 > X/2 :
         X = X/2
         cnt += 1
     else: 
